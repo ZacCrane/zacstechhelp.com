@@ -34,7 +34,8 @@ img.emoji {
 <link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.7.2" media="all">
 <link rel="stylesheet" id="serverpress-css" href="/ds-plugins/ds-cli/fontello/css/serverpress.css?ver=5.7.2" media="all">
 <link rel="stylesheet" id="sp-animation-css" href="/ds-plugins/ds-cli/fontello/css/animation.css?ver=5.7.2" media="all">
-<link rel="stylesheet" id="wpforms-base-css" href="/wp-content/plugins/wpforms-lite/assets/css/wpforms-base.min.css?ver=1.6.7.2" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4.1" media="all">
+<link rel="stylesheet" id="astra-contact-form-7-css" href="/wp-content/themes/astra/assets/css/minified/compatibility/contact-form-7-main.min.css?ver=3.6.2" media="all">
 <!--[if IE]>
 <script src='/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=3.6.2' id='astra-flexibility-js'></script>
 <script id='astra-flexibility-js-after'>
@@ -44,7 +45,7 @@ flexibility(document.documentElement);
 <script src="/wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
 <script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <script id="ds-cli-js-extra">
-var ds_cli = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"9902407092"};
+var ds_cli = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"6935e9058a"};
 </script>
 <script src="/ds-plugins/ds-cli/js/ds-cli.js?ver=5.7.2" id="ds-cli-js"></script>
 <link rel="https://api.w.org/" href="/wp-json/">
@@ -173,6 +174,10 @@ var ds_cli = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"9902407092"};
 
 
 
+<div class="wp-block-column is-vertically-aligned-top"></div>
+
+
+
 <div class="wp-block-group alignfull has-white-background-color has-background"><div class="wp-block-group__inner-container">
 <div class="wp-block-columns alignwide are-vertically-aligned-top">
 <div class="wp-block-column is-vertically-aligned-top">
@@ -214,33 +219,31 @@ var ds_cli = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"9902407092"};
 
 
 <div class="wp-block-column is-vertically-aligned-top">
-<div class="wpforms-container " id="wpforms-14"><form id="wpforms-form-14" class="wpforms-validate wpforms-form" data-formid="14" method="post" enctype="multipart/form-data" action="/contact/" data-token="5a168473ab889e2d083c9dc5aea70757">
-<noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript>
-<div class="wpforms-field-container">
-<div id="wpforms-14-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0">
-<label class="wpforms-field-label wpforms-label-hide" for="wpforms-14-field_0">Name <span class="wpforms-required-label">*</span></label><div class="wpforms-field-row wpforms-field-large">
-<div class="wpforms-field-row-block wpforms-first wpforms-one-half">
-<input type="text" id="wpforms-14-field_0" class="wpforms-field-name-first wpforms-field-required" name="wpforms[fields][0][first]" placeholder="First Name" required><label for="wpforms-14-field_0" class="wpforms-field-sublabel after wpforms-sublabel-hide">First</label>
+<div role="form" class="wpcf7" id="wpcf7-f1099-p904-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response">
+<p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul>
 </div>
-<div class="wpforms-field-row-block wpforms-one-half">
-<input type="text" id="wpforms-14-field_0-last" class="wpforms-field-name-last wpforms-field-required" name="wpforms[fields][0][last]" placeholder="Last Name" required><label for="wpforms-14-field_0-last" class="wpforms-field-sublabel after wpforms-sublabel-hide">Last</label>
+<form action="/contact/#wpcf7-f1099-p904-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="1099">
+<input type="hidden" name="_wpcf7_version" value="5.4.1">
+<input type="hidden" name="_wpcf7_locale" value="en_US">
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1099-p904-o1">
+<input type="hidden" name="_wpcf7_container_post" value="904">
+<input type="hidden" name="_wpcf7_posted_data_hash" value="">
 </div>
+<p><label> Your name<br>
+    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> </label></p>
+<p><label> Your email<br>
+    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span> </label></p>
+<p><label> Subject<br>
+    <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> </label></p>
+<p><label> Your message (optional)<br>
+    <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </label></p>
+<p><input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit"></p>
+<div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
 </div>
-</div>
-<div id="wpforms-14-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1">
-<label class="wpforms-field-label wpforms-label-hide" for="wpforms-14-field_1">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-14-field_1" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][1]" placeholder="Email Address" required>
-</div>
-<div id="wpforms-14-field_3-container" class="wpforms-field wpforms-field-text" data-field-id="3">
-<label class="wpforms-field-label wpforms-label-hide" for="wpforms-14-field_3">Subject <span class="wpforms-required-label">*</span></label><input type="text" id="wpforms-14-field_3" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][3]" placeholder="Subject" required>
-</div>
-<div id="wpforms-14-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2">
-<label class="wpforms-field-label wpforms-label-hide" for="wpforms-14-field_2">Comment or Message <span class="wpforms-required-label">*</span></label><textarea id="wpforms-14-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" placeholder="Your Message" required></textarea>
-</div>
-</div>
-<div class="wpforms-submit-container">
-<input type="hidden" name="wpforms[id]" value="14"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="904"><button type="submit" name="wpforms[submit]" class="wpforms-submit " id="wpforms-submit-14" value="wpforms-submit" aria-live="assertive" data-alt-text="Sending..." data-submit-text="Send Message">Send Message</button>
-</div>
-</form data-netlify="true"></div>  <!-- .wpforms-container -->
 </div>
 </div>
 </div></div>
@@ -248,9 +251,11 @@ var ds_cli = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"9902407092"};
 
 
 <div class="wp-block-group alignfull has-white-background-color has-background"><div class="wp-block-group__inner-container">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9168973722276!2d-74.00738308418347!3d40.71984587933104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598ac19b0b89%3A0x3f69aa88f153b584!2s25%206th%20Ave%2C%20New%20York%2C%20NY%2010013%2C%20USA!5e0!3m2!1sen!2sin!4v1620914856370!5m2!1sen!2sin" width="1920" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9168973722276!2d-74.00738308418347!3d40.71984587933104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598ac19b0b89%3A0x3f69aa88f153b584!2s25%206th%20Ave%2C%20New%20York%2C%20NY%2010013%2C%20USA!5e0!3m2!1sen!2sin!4v1620914856370!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" width="1920" height="450"></iframe>
 </div></div>
 
+
+<p><!-- /wp:group --></p>
 		
 		
 	</div>
@@ -366,17 +371,17 @@ Sunday : Closed</p>
 var astra = {"break_point":"921","isRtl":""};
 </script>
 <script src="/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=3.6.2" id="astra-theme-js-js"></script>
+<script src="/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4" id="wp-polyfill-js"></script>
+<script id="wp-polyfill-js-after">
+( 'fetch' in window ) || document.write( '<script src="/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"><\/scr' + 'ipt>' );( document.contains ) || document.write( '<script src="/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"><\/scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"><\/scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"><\/scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"><\/scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"><\/scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"><\/scr' + 'ipt>' );
+</script>
+<script id="contact-form-7-js-extra">
+var wpcf7 = {"api":{"root":"\/wp-json\/","namespace":"contact-form-7\/v1"}};
+</script>
+<script src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.1" id="contact-form-7-js"></script>
 <script src="/wp-includes/js/wp-embed.min.js?ver=5.7.2" id="wp-embed-js"></script>
-<script src="/wp-content/plugins/wpforms-lite/assets/js/jquery.validate.min.js?ver=1.19.0" id="wpforms-validation-js"></script>
-<script src="/wp-content/plugins/wpforms-lite/assets/js/mailcheck.min.js?ver=1.1.2" id="wpforms-mailcheck-js"></script>
-<script src="/wp-content/plugins/wpforms-lite/assets/js/wpforms.js?ver=1.6.7.2" id="wpforms-js"></script>
 			<script>
 			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 			</script>
-			<script type="text/javascript">
-/* <![CDATA[ */
-var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_empty_blanks":"Please fill out all blanks.","uuid_cookie":"","locale":"en","wpforms_plugin_url":"\/wp-content\/plugins\/wpforms-lite\/","gdpr":"","ajaxurl":"\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":""}
-/* ]]> */
-</script>
-	</body>
+				</body>
 </html>
